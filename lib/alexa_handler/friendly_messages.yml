@@ -1,0 +1,10 @@
+welcome: |
+  Nice you joined. Say load random to start with any story.
+help: |
+  If you're stuck, try list choices to retrieve a list of options. In case
+  you want to switch to another story, say load story.
+nostory: |
+  I could not find a matching story.
+nochoice: |
+  I could not find a matching choice, please choose one of the following:
+login: 'Use the following code: '

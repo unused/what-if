@@ -1,0 +1,8 @@
+require:
+  - rubocop-rails
+  - rubocop-faker
+  - rubocop-performance
+
+AllCops:
+  Exclude:
+    - vendor/**/*

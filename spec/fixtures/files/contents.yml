@@ -1,0 +1,58 @@
+---
+text_only: |
+  text without any code.
+
+multiline_text:
+  This still has text.
+  And more than one line.
+
+state: |
+  <<set $bar = 42>>
+
+text_and_state: |
+  text <<set $bar = 2>> and state.
+
+multiline_text_and_state:
+  This has some text text.
+  <<set $baz = 7>>
+
+state_init: |
+  <<set $bar = 42>><<set $foo = 0>> This still has text.
+
+alternative_assignment:
+  This still has text.
+  <<set $foo to 4>>
+
+state_update_add: |
+  <<set $num to $num + 4>> This still has text.
+
+state_update_sub: |
+  This still has text.
+  <<set $num to $num - 2>>
+
+condition: |
+  <<if $bar = 42>>Bar is 42<<else>>Bar is not 42<<endif>>
+
+embedded_condition: |
+  One <<if $two = 2>>Two<<endif>> Three
+
+equals: |
+  <<if $bar eq 7>>Bar is 7<<endif>>
+
+greater_than: |
+  <<if $bar gt 42>>Bar is greater than 42<<endif>>
+
+greater_than_equal: |
+  <<if $bar gte 42>>Bar is greater than or equal 42<<endif>>
+
+lower_than: |
+  <<if $bar lt 42>>Bar is lower than 42<<endif>>
+
+lower_than_equal: |
+  <<if $bar lte 42>>Bar is lower than or equal 42<<endif>>
+
+logical_operator_or: |
+  <<if ($bar eq 2) or ($foo eq 3)>>yes<<else>>no<<endif>>
+
+logical_operator_and: |
+  <<if ($bar eq 42) and ($foo eq 3)>>yes<<else>>no<<endif>>

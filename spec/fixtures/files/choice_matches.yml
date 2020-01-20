@@ -1,0 +1,29 @@
+---
+match:
+  - some option
+  - some option
+  - some other message for distraction
+similar:
+  - try betting it against the grain
+  - try petting it against the grain
+  - some other message for distraction
+close_word:
+  - try padding it against the grain
+  - try petting it against the grain
+  - some other message for distraction
+no_match:
+  - I does not match with nothing
+  - try petting it against the grain
+  - some other message for distraction
+strange_but_similar:
+  - petenera cat
+  - Pet another cat
+  - I'm gonna do it... I'm gonna touch the cat belly
+close_enough:
+  - rap its just
+  - Rub its chest
+  - Tickle its ear tuffs
+lol:
+  - softly how old is Paul
+  - Softly hold its paw
+  - Hmm, kinda feeling drowsy...

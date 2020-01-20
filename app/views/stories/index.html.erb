@@ -1,0 +1,20 @@
+
+<h1><%= page_title t '.title' %></h1>
+
+<%= render partial: 'new' %>
+
+<div class="stories">
+  <% @stories.group_by { |s| s.title.first.downcase }.each do |char, stories| %>
+    <section class="stories__group">
+      <h2 class="stories__group-header"><%= char %></h2>
+      <ul>
+        <% stories.each do |story| %>
+          <li>
+            <%= story.title %>
+            <%= content_tag :strong, '(public)' unless story.user %>
+          </li>
+        <% end %>
+      </ul>
+    </section>
+  <% end %>
+</div>

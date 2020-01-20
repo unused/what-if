@@ -1,0 +1,25 @@
+en:
+  shared:
+    title: Game
+  sessions:
+    new:
+      title: Login
+      introduction_html: |
+        What IF is a web application you can use to play interactive fiction
+        games using a Amazon Alexa device. In order to play you have to use
+        and the skill <em>Storybox</em>.
+      instructions_html: |
+        Install the <em>Storybox</em> skill, then tell Alexa to <em>Login<em>.
+        You will receive some code to enter. Once logged in you can read along
+        with the stories you play, upload and browse other stories.
+      code: Passcode
+    create:
+      error: Login was not successfull. Please try again.
+  stories:
+    index:
+      title: Stories Overview
+    new:
+      help: Upload a story. Drag & Drop or Click!
+  users:
+    show:
+      title: Play

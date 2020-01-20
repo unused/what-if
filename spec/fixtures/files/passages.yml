@@ -1,0 +1,9 @@
+---
+simple: |
+  :: Passage
+  This is a simple passage, with a [[sample]] content that provides enough
+  characters to span multiple lines and includes [[some]] [[references|links]].
+
+start: |
+  :: Start [initial, something]
+  This is a sample start, go [[anywhere|the pub]] from here.

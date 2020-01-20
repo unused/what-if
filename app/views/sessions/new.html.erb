@@ -1,0 +1,27 @@
+
+<div class="container container--row" id="login-form">
+  <section style="max-width:20rem;margin-right:3rem">
+    <img src="/logo.png" alt="What IF Logo" style="max-width:80%" />
+    <p><%=t '.introduction_html' %></p>
+  </section>
+
+  <section class="container" style="max-width:20rem">
+    <h1><%= page_title t '.title' %></h1>
+
+    <%= form_tag session_path, method: :post do %>
+      <p><%=t '.instructions_html' %></p>
+
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: "alert alert--#{name}" %>
+      <% end %>
+
+      <div class="container">
+        <%= label_tag :code, t('.code'), class: 'label' %>
+        <%= text_field_tag :code, '', class: 'text-field', required: true,
+          autocomplete: 'off' %>
+
+        <button class="button"><%=t '.submit' %></button>
+      </div>
+    <% end %>
+  </section>
+</div>

@@ -1,0 +1,16 @@
+
+.messages {
+  min-width: 8rem; background: darkgray; color: white;
+  box-sizing: border-box; padding: 1.5rem;
+}
+
+.message {
+  border-radius: .25rem;
+  padding: 2rem;
+  background: lightgray;
+
+  transition: all .25s linear;
+
+  &--response { background: lightblue; }
+  &--request { background: lightgreen; }
+}

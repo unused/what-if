@@ -1,0 +1,17 @@
+
+.stories {
+  width: 100%; box-sizing: border-box; padding: 3rem;
+  display: flex; flex-flow: row wrap; justify-content: center;
+  // display: grid; grid-gap: .5rem; grid-template-columns: repeat(4, 25rem);
+  // grid-auto-flow: row;
+
+  &__group { display: flex; flex-flow: row wrap; margin: 3rem; }
+  &__group-header {
+    font-size: 1.5rem; text-transform: uppercase;
+    margin: 1rem 0 0 .5rem; transform: translate(-.5rem, -1.5rem);
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .stories__group { max-width: 40rem; }
+}
