@@ -19,3 +19,7 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
+
+# Explicitly use database url for configuration.
+production:
+  url: <%= ENV['DATABASE_URL'] %>
