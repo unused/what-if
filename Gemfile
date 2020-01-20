@@ -40,6 +40,10 @@ gem 'sidekiq', '~> 6.0.1'
 # Use alexarb for custom skill handling
 gem 'alexarb', github: 'unused/alexarb'
 
+# Use graphviz for parser graph visualization
+# TODO: Maybe allow task in development env only.
+gem 'ruby-graphviz'
+
 group :development, :test do
   # Use test factories
   gem 'factory_bot_rails'

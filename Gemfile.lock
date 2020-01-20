@@ -234,6 +234,7 @@ GEM
     rubocop-rails (2.4.1)
       rack (>= 1.1)
       rubocop (>= 0.72.0)
+    ruby-graphviz (1.2.4)
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
@@ -328,6 +329,7 @@ DEPENDENCIES
   rubocop-faker
   rubocop-performance
   rubocop-rails
+  ruby-graphviz
   sass-rails (~> 5)
   selenium-webdriver
   sidekiq (~> 6.0.1)
