@@ -7,7 +7,7 @@
 class Message < ApplicationRecord
   belongs_to :user
 
-  after_create { ActionCable.server.broadcast 'messages', attributes }
+  after_create :broadcast
 
   def data_json
     self[:data]
@@ -17,5 +17,9 @@ class Message < ApplicationRecord
     JSON.parse self[:data] if self[:data].present?
   rescue JSON::ParserError
     { error: 'JSON::ParserError', message: 'Could not parse message' }
+  end
+
+  def broadcast
+    ActionCable.server.broadcast 'messages', attributes
   end
 end

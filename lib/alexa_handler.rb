@@ -22,15 +22,13 @@ class AlexaHandler < Alexarb::Application
 
   before_filter do
     @user ||= User.find_or_create_by ask_id: jeff.whoami
-    return if Rails.env.production?
-
-    user.messages.create data_type: 'request', data: request.raw.to_json
+    msg = user.messages.new(data_type: 'request', data: request.raw.to_json)
+    Rails.env.production? ? msg.broadcast : msg.save!
   end
 
   after_filter do
-    return if Rails.env.production?
-
-    user.messages.create data_type: 'response', data: response.to_h.to_json
+    msg = user.messages.new(data_type: 'response', data: response.to_h.to_json)
+    Rails.env.production? ? msg.broadcast : msg.save!
   end
 
   launch_request do
