@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Register warden authentication
 Warden::Strategies.add(:session) do
   def valid?

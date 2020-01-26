@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Converts content to some story.
 class StoryConverter
   def self.create(result)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require Rails.root.join 'lib', 'story_extractor'
 require Rails.root.join 'lib', 'story_converter'
 

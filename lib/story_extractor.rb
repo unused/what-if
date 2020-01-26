@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './twee'
 
 # StoryExtractor extracts story contents from a Twee file.
