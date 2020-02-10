@@ -40,6 +40,8 @@ class SaveGamesController < ApplicationController
 
   def set_save_game
     id = params[:id] || params[:save_game_id] || user.active_game_id
+    return unless id
+
     @save_game = user.save_games.find id
   end
 

@@ -13,6 +13,7 @@ const Application = ({debug}) => {
   const [activeGame, setActiveGame] = useState();
   const [messages, setMessages] = useState([]);
 
+
   const fetchPassage = () =>
     actions.fetchActiveGame().then(game => {
       setActiveGame(game);
@@ -50,7 +51,12 @@ const Application = ({debug}) => {
   }
 
   if (!activeGame) {
-    return <p>No active game found. Start one using Alexa and reload.</p>;
+    return (
+      <div className="app">
+        <p>If you have not uploaded any game yet, do so in the stories page.</p>
+        <p>No active game found. Start one using Alexa and reload.</p>
+      </div>
+    );
   }
 
   return (

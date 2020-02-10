@@ -67,6 +67,13 @@ stories. For sure this would be a risk for any service and therefor was never
 planned. As it turned out the service requires several things the prototype was
 rewritten using rails in order to cover some basics.
 
+## Development
+
+```sh
+$ bin/rails s # start local webserver
+$ TWEEGO_PATH=/path/to/story-formats TWEEGO_BIN=/path/to/tweego bundle exec sidekiq
+```
+
 ## TODO
 
 - [ ] Add terms & privacy infos
