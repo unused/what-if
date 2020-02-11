@@ -70,8 +70,10 @@ rewritten using rails in order to cover some basics.
 ## Development
 
 ```sh
+$ bin/rails tweego:setup
+$ bin/rails db:setup
 $ bin/rails s # start local webserver
-$ TWEEGO_PATH=/path/to/story-formats TWEEGO_BIN=/path/to/tweego bundle exec sidekiq
+$ TWEEGO_PATH=vendor/tweego/storyformats TWEEGO_BIN=bin/tweego bundle exec sidekiq
 ```
 
 ## TODO
