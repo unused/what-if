@@ -36,5 +36,5 @@ yarn-debug.log*
 .yarn-integrity
 
 # Ignore tweego
-/vendor/tweego
-/bin/tweego
+# /vendor/tweego
+# /bin/tweego
