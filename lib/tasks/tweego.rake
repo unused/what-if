@@ -15,6 +15,8 @@ namespace :tweego do
 
   desc 'Setup tweego'
   task setup: :environment do
+    next if File.exists? Rails.root.join 'bin', 'tweego'
+
     system <<~EOSH
       mkdir -p #{Rails.root.join('tmp', 'tweego')}
       cd #{Rails.root.join('tmp', 'tweego')}
