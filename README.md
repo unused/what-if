@@ -84,6 +84,10 @@ $ TWEEGO_PATH=vendor/tweego/storyformats TWEEGO_BIN=bin/tweego bundle exec sidek
 - [ ] Host What IF and add Test Content
 - [ ] Link to GitHub Repository
 
+<!-- resources, references, notes -->
+
 [twine]: https://twinery.org/ "Twine, open-source software for telling interactive, nonlinear stories"
 [poc]: https://en.wikipedia.org/wiki/Proof_of_concept "Proof of Concept"
 [tweego]: http://www.motoslave.net/tweego/ "Twine/Twee compiler by Thomas Michael Edwards"
+[sidekiq]: https://github.com/mperham/sidekiq/wiki/Deployment
+[heroku]: https://devcenter.heroku.com/articles/getting-started-with-rails6#run-rake-commands
