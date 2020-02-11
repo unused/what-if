@@ -29,8 +29,6 @@ class ConvertWorker
     def convert_file
       File.write text_filename, story.raw
 
-      Rails.logger.info `pwd`
-      Rails.logger.info `ls -al #{Rails.root.join('bin')}`
       `#{tweego} -d #{text_filename} -o #{filename}`
     end
 
