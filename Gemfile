@@ -35,7 +35,7 @@ gem 'fuzzy_match', '~> 2.1.0'
 gem 'parslet', '~> 1.8.2'
 
 # Sidekiq background worker
-gem 'sidekiq', '~> 6.0.1'
+gem 'sidekiq', '~> 6.4.0'
 
 # Use alexarb for custom skill handling
 gem 'alexarb', github: 'unused/alexarb'
